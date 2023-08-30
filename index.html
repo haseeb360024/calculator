@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./calcsyle.css">
+</head>
+<body>
+    <!-- Create table -->
+    <table id="calcu">
+        <tr>
+            <td colspan="3">
+                <input type="text" id="result">
+            </td>
+            <td><input type="button" class="AC" onclick="allClear()"  value="AC"></td>
+        </tr>
+        <tr>
+            <td><input type="button" onclick="display('1')" value="1"></td>
+            <td><input type="button" onclick=" display('2')" value="2"></td>
+            <td><input type="button" onclick="display('3')" value="3"></td>
+            <td><input type="button" onclick="display('/')" class="opt" value="/"></td>
+        </tr>
+        <tr>
+            <td><input type="button" onclick="display('4')" value="4"></td>
+            <td><input type="button" onclick="display('5')" value="5"></td>
+            <td><input type="button" onclick="display('6')" value="6"></td>
+            <td><input type="button" onclick="display('*')" class="opt" value="x"></td>
+        </tr>
+        <tr>
+            <td><input type="button" onclick="display('7')" value="7"></td>
+            <td><input type="button" onclick="display('8')" value="8"></td>
+            <td><input type="button" onclick="display('9')" value="9"></td>
+            <td><input type="button" onclick="display('-')" class="opt" value="-"></td>
+        </tr>
+        <tr>
+            <td><input type="button" onclick="display('0')" value="0"></td>
+            <td><input type="button" onclick="display('.')" class="opt" value="."></td>
+            <td><input type="button" onclick="exprEval()" class="opt" value="="></td>
+            <td><input type="button" onclick="display('+')" class="opt"value="+"></td>
+        </tr>
+            <td><input type="button" id="del"onclick="removeLast()" value="del"></td>
+    </table>
+</body>
+<script src="./calculator.js"></script>
+</html>
